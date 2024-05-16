@@ -2,8 +2,8 @@ const main = document.querySelector('main');
 
 const img1 = document.getElementById('img1');
 const img2 = document.getElementById('img2');
-// const img3 = document.getElementById('img3');
-// const img4 = document.getElementById('img4');
+const img3 = document.getElementById('img3');
+const img4 = document.getElementById('img4');
 const imgWrappers = [...document.querySelectorAll('.img-wrapper')];
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -12,21 +12,21 @@ const id = urlParams.get('id');
 const baseImgPath = './img/';
 const guestsImgPath = './img/guests/';
 
-if (+id && !isNaN(+id) && +id > 0 && +id <= 27) {
-  img1.src = guestsImgPath + `1_${id}.jpg`;
-  img2.src = baseImgPath + `2_2.jpg`;
+if (+id && !isNaN(+id) && +id > 0 && +id <= 25) {
+  //img1.src = guestsImgPath + `1_${id}.jpg`;
+  img2.src = guestsImgPath + `plural/2_${id}.jpg`;
   // img3.src = baseImgPath + '3.jpg';
   // img4.src = baseImgPath + '4.jpg';
-} else if (+id && !isNaN(+id) && +id === 31) {
-  img1.src = guestsImgPath + `1_${id}.jpg`;
-  img2.src = baseImgPath + `2_2.jpg`;
+} else if (+id && !isNaN(+id) && +id > 25 && +id <= 28) {
+  //img1.src = guestsImgPath + `1_${id}.jpg`;
+  img2.src = guestsImgPath + `single/2_${id}.jpg`;
   // img3.src = baseImgPath + '3.jpg';
-  // img4.src = baseImgPath + '4.jpg';
-} else if (+id && !isNaN(+id) && +id > 0 && +id <= 30) {
-  img1.src = guestsImgPath + `1_${id}.jpg`;
-  img2.src = baseImgPath + `2_1.jpg`;
+  img4.src = guestsImgPath + `single/4.jpg`;
+} else if (+id && !isNaN(+id) && +id > 28 && +id <= 30) {
+  //img1.src = guestsImgPath + `1_${id}.jpg`;
+  img2.src = guestsImgPath + `without/2_${id}.jpg`;
   // img3.src = baseImgPath + '3.jpg';
-  // img4.src = baseImgPath + '4.jpg';
+  img4.src = guestsImgPath + `without/4.jpg`;
 } else {
 }
 
