@@ -29,7 +29,7 @@ const names = [
   { id: '28', names: 'Дорогая Евгения' },
   { id: '29', names: 'Дорогие Александр и Екатерина' },
   { id: '30', names: 'Дорогие Дмитрий и Татьяна' },
-  { id: '31', names: 'Дорогие Илья и Виктория' },
+  { id: '31', names: 'Дорогие Михаил и Светлана' },
 ];
 
 const baseURL = location.href.replace('admin/', ''); //location.origin
